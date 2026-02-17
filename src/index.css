@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "tailwindcss";
+
+
+
+
+@theme {
+
+  /* Base */
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* Backgrounds */
+  --color-black-1: #121212; 
+  --color-black-2: #1f1f1f;
+
+  /* Surfaces / Layers */
+  --color-surface-glass: #2d2d2d4d;
+  --color-surface-overlay: #ffffff1a;
+  --color-surface-light: #fff3;
+  --color-surface-soft: #fff9;
+
+  /* Text */
+  --color-gray-1: #bfbbbb;
+  --color-gray-2: #8f8f8f;
+
+  /* Accent / Brand */
+  /* --color-accent-red: #fd321c;
+  --color-accent-orange: #ff8a00; */
+  --color-accent: #4f7cff;
+--color-accent-gradient:  #6aa8ff;
+
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+   font-family: "Poppins", sans-serif;
+}
+a, button, input, select, textarea{
+    font-family: inherit;
+}
+
+/* hero image */
+.reveal-mask {
+  mask-image: radial-gradient(
+    circle 80px at var(--x) var(--y),
+    black 0%,
+    black 40%,
+    transparent 41%
+  );
+
+  -webkit-mask-image: radial-gradient(
+    circle 80px at var(--x) var(--y),
+    black 0%,
+    black 40%,
+    transparent 41%
+  );
+
+  transition: mask-position 0.05s linear;
+
+  /* Cool effects on anime image */
+  filter: saturate(1.2) contrast(1.1) brightness(1.05);
+}
+.hover-text-mask {
+  position: relative;
+  color: #000; /* original text color */
+}
+
+.hover-text-mask::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff; /* text turns white inside cursor */
+  pointer-events: none;
+
+  /* mask only the area under cursor */
+  mask-image: radial-gradient(circle 60px at var(--cursor-x) var(--cursor-y), black 100%, transparent 101%);
+  -webkit-mask-image: radial-gradient(circle 60px at var(--cursor-x) var(--cursor-y), black 100%, transparent 101%);
+}
+
