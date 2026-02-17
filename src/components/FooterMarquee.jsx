@@ -12,7 +12,7 @@ const FooterMarquee = ({ref}) => {
   const loopItems = [...textItems, ...textItems];
 
   return (
-    <div ref={ref} className="bg-accent text-black overflow-hidden select-none absolute bottom-0 left-0 right-0 py-5 z-2">
+    <div ref={ref} className="bg-accent text-black overflow-hidden select-none absolute bottom-0 left-0 right-0 py-5 z-10">
       <motion.div
         className="flex gap-16 whitespace-nowrap font-bold 
                    text-4xl sm:text-5xl lg:text-[100px] xl:text-[180px]"

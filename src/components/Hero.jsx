@@ -26,7 +26,7 @@ const radius = useSpring(rawradius, { stiffness: 120, damping: 20 });
     <section ref={ref}
     id='home'
     className='sticky top-[-50%] z-5 bg-black-2 min-h-screen  '>
-      <div className="max-w-7xl mx-auto px-5 py-10 lg:px-8 lg:py-16 xl:py-25 grid gap-5  ">
+      <div className="max-w-7xl mx-auto  px-5 py-10 pt-40 lg:px-8 lg:py-16 xl:py-25 grid gap-5  ">
 
         {/* img */}
         

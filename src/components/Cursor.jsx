@@ -26,7 +26,7 @@ const Cursor = () => {
     scale: 3, // bigger for text reveal
     backgroundColor: '#000',
     borderRadius: '50%',
-    boxShadow: '0 0 20px rgba(238,255,0,0.3)',
+    boxShadow: '0 0 20px rgba(79, 124, 255,0.3)',
 
     // this is important: mask effect will follow cursor
   },
@@ -35,7 +35,7 @@ const Cursor = () => {
     backgroundColor: 'transparent',
     borderRadius: '50%',
     border:'1px solid #4f7cff',
-    boxShadow: '0 0 20px rgba(238,255,0,0.3)',
+    boxShadow: '0 0 20px rgba(79, 124, 255,0.3)',
     // this is important: mask effect will follow cursor
   },
     hoverImage: {
@@ -43,7 +43,7 @@ const Cursor = () => {
       backgroundColor: '#4f7cff',
       border: 'none',
       borderRadius: '50%',
-      boxShadow: '0 0 20px rgba(238,255,0,0.5)',
+      boxShadow: '0 0 20px rgba(79, 124, 255,0.5)',
       // Animate HeroImage anime layer as well
       onUpdate: () => {
         if (heroImageRef.current) {
@@ -73,7 +73,7 @@ const cursorClass =
   return (
     <>
       <motion.div
-        className={`fixed top-0 left-0 pointer-events-none   mix    z-99990 w-6 h-6 ${cursorClass}`}
+        className={`fixed top-0 left-0 pointer-events-none   mix    z-9999999 w-6 h-6 ${cursorClass}`}
         style={{ translateX: cursorX, translateY: cursorY }}
         animate={cursorVariant}
         variants={variants}

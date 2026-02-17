@@ -67,6 +67,7 @@ a, button, input, select, textarea{
 .hover-text-mask {
   position: relative;
   color: #000; /* original text color */
+  /* background: rgb(79, 124, 255); */
 }
 
 .hover-text-mask::after {
