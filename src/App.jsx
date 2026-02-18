@@ -10,6 +10,7 @@ import { CursorContextProvider } from './components/CursorContext'
 import Cursor from './components/Cursor'
 import Navbar from './components/Navbar'
 
+
 const App = () => {
   // first handle all the layout, text animations at end, loader,custom cursor, gradients
   return (
@@ -17,6 +18,7 @@ const App = () => {
     <main className='bg-black-2 text-white min-h-screen'>
       <CursorContextProvider>
 <Cursor/>
+
 <Navbar/>
       <Hero/>
 

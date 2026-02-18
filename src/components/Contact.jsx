@@ -1,10 +1,12 @@
 import { motion } from "motion/react";
 import PrimaryButton from "./PrimaryButton";
+import MeshGradientBg from "./MeshGradientBg";
 
 
 const Contact = () => {
   return (
     <section id="contact" className="bg-black-1 relative z-50 px-6 py-20 lg:py-40 text-white overflow-hidden">
+      <MeshGradientBg/>
      
      {/* gradient */}
      {/* <div className="bg-accent w-20 aspect-square rounded-full absolute top-15% left-40 z-1"></div> */}

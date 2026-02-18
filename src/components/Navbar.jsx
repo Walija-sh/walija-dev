@@ -29,7 +29,7 @@ const Navbar = () => {
   return (
     <>
       {/* Fixed Navbar */}
-      <nav className={`fixed top-0 left-0 right-0 overflow-y-auto no-scrollbar z-1000000    px-6 py-4  ${isOpen ? 'bottom-0 backdrop-blur-3xl bg-black-2/40':''}`}>
+      <nav className={`fixed top-0 left-0 right-0 overflow-y-auto no-scrollbar z-1000000    px-6 py-4  ${isOpen ? 'bottom-0 lg:bottom-auto backdrop-blur-3xl bg-black-2/40':''}`}>
        {/* Gradient blur overlay */}
   <div 
     className={`absolute top-0 left-0 right-0 w-full h-full -z-10 ${isOpen ? 'hidden':''}`}
