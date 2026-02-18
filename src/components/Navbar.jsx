@@ -29,38 +29,49 @@ const Navbar = () => {
   return (
     <>
       {/* Fixed Navbar */}
-      <nav className={`fixed top-0 left-0 right-0 z-1000000 ${isOpen? 'bg-black-2/10 backdrop-blur-2xl':''} px-6 py-4 `}>
-        <div className="max-w-7xl mx-auto flex items-center justify-end">
-          {/* Logo/Name */}
-            {/* <div className="w-10 h-10 rounded-full bg-accent flex items-center justify-center text-black font-bold text-sm overflow-hidden">
-              <img src="/images/me.png" className="w-full h-full object-top object-cover" alt="Z" />
-            </div>
-          */}
-
+      <nav className={`fixed top-0 left-0 right-0 overflow-y-auto no-scrollbar z-1000000    px-6 py-4  ${isOpen ? 'bottom-0 backdrop-blur-3xl bg-black-2/40':''}`}>
+       {/* Gradient blur overlay */}
+  <div 
+    className={`absolute top-0 left-0 right-0 w-full h-full -z-10 ${isOpen ? 'hidden':''}`}
+    style={{
+      backdropFilter: 'blur(12px)',
+      WebkitBackdropFilter: 'blur(12px)',
+      mask: 'linear-gradient(to bottom, black 0%, black 55%, transparent 100%)',
+      WebkitMask: 'linear-gradient(to bottom, black 0%, black 55%, transparent 100%)',
+      backgroundColor: 'rgba(0, 0, 0, 0.1)'
+    }}
+  />
+  
+        <div className="max-w-7xl mx-auto flex items-center justify-between">
+          {/* left */}
+                   <RollingText
+  text='Walija.dev'
+  className=" text-[16px] lg:text-[20px] leading-none font-bold hover:text-accent transition-all duration-100 ease-in uppercase"
+/>
           
           {/* Right - Menu Icon */}
           <button
             onClick={toggleMenu}
-            className="relative w-10 h-10 flex flex-col items-center justify-center gap-1.5 focus:outline-none group"
+            className="relative w-10 h-10 flex flex-col items-center justify-center gap-1.5 focus:outline-none group cursor-pointer"
             aria-label="Toggle menu"
           >
             <motion.div
               variants={topBarVariants}
               animate={isOpen ? "open" : "closed"}
               transition={{ duration: 0.3, ease: "easeInOut" }}
-              className="w-6 h-0.5 lg:w-12 lg:h-1 bg-white/80 group-hover:bg-accent transition-colors"
+              className=" w-12 h-1 bg-white/80 group-hover:bg-accent transition-colors"
             />
             <motion.div
               variants={middleBarVariants}
               animate={isOpen ? "open" : "closed"}
               transition={{ duration: 0.3, ease: "easeInOut" }}
-              className="w-6 h-0.5 lg:w-12 lg:h-1 bg-white/80 group-hover:bg-accent transition-colors"
+              className="w-12 h-1 bg-white/80 group-hover:bg-accent transition-colors"
             />
             <motion.div
               variants={bottomBarVariants}
               animate={isOpen ? "open" : "closed"}
               transition={{ duration: 0.3, ease: "easeInOut" }}
-              className="w-6 h-0.5 lg:w-12 lg:h-1 bg-white/80 group-hover:bg-accent transition-colors"
+              className=" w-12 h-1 bg-white/80 group-hover:bg-accent transition-colors"
             />
           </button>
         </div>

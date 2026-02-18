@@ -12,18 +12,33 @@ const RollingText = ({
   const GAP = 8;
 
 
-  // Measure real text height (responsive safe)
+  // // Measure real text height (responsive safe)
+  // useLayoutEffect(() => {
+  //   if (measureRef.current) {
+  //     setHeight(measureRef.current.offsetHeight);
+  //   }
+  // }, [text]);
   useLayoutEffect(() => {
-    if (measureRef.current) {
-      setHeight(measureRef.current.offsetHeight);
-    }
-  }, [text]);
+  if (!measureRef.current) return;
+
+  const update = () => {
+    setHeight(measureRef.current.offsetHeight);
+  };
+
+  update(); // initial measure
+
+  const observer = new ResizeObserver(update);
+  observer.observe(measureRef.current);
+
+  return () => observer.disconnect();
+}, [text]);
+
 
   const chars = text.split("");
 
   return (
     <span
-      className={`inline-block ${className}`}
+      className={`inline-block cursor-pointer ${className}`}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >

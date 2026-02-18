@@ -85,3 +85,7 @@ a, button, input, select, textarea{
   -webkit-mask-image: radial-gradient(circle 60px at var(--cursor-x) var(--cursor-y), black 100%, transparent 101%);
 }
 
+.no-scrollbar::-webkit-scrollbar{
+  scrollbar-width: none;
+  display: none;
+}
