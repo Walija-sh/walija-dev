@@ -13,19 +13,27 @@ const PageLoader = () => {
     >
       {/* Panel 1 */}
       <motion.div
-        className="relative h-full w-full bg-accent origin-top"
+        className="relative h-full w-full bg-black-1 origin-top"
         initial={{ scaleY: 1 }}
         exit={{ scaleY: 0 }}
         transition={transition}
       />
       
       <motion.div 
-        className="absolute inset-0 flex items-center justify-center text-white"
+        className="absolute inset-0 flex items-center justify-center "
         initial={{ opacity: 1 }}
         exit={{ opacity: 0, y: -20 }}
         transition={{ duration: 0.5 }}
       >
-        <h1 className="text-2xl font-bold tracking-tighter">LOADING...</h1>
+        {/* <!-- From Uiverse.io by Nawsome -->  */}
+
+<div class="loadingspinner">
+  <div id="square1"></div>
+  <div id="square2"></div>
+  <div id="square3"></div>
+  <div id="square4"></div>
+  <div id="square5"></div>
+</div>
       </motion.div>
     </motion.div>
   );
