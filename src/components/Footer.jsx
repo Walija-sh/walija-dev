@@ -4,8 +4,11 @@ import PrimaryButton from "./PrimaryButton";
 import { useLayoutEffect, useRef, useState } from "react";
 import FooterMarquee from "./FooterMarquee";
 import RollingText from "./RollingText";
+import { socialLinks } from "./data";
+import { useCursorContext } from "./CursorContext";
 
 const Footer = () => {
+   const { setVariant } = useCursorContext();
     const footerRef=useRef(null);
     const marqueeRef = useRef(null);
 const [marqueeH, setMarqueeH] = useState(0);
@@ -109,20 +112,22 @@ const y = useSpring(yRaw, {
 
           <p>© {new Date().getFullYear()} All rights reserved</p>
 
-          <div className="flex items-center gap-6 text-lg">
-            <a href="#" className="hover:text-accent transition">
-              <FaInstagram />
-            </a>
-            <a href="#" className="hover:text-accent transition">
-              <FaTwitter />
-            </a>
-            <a href="#" className="hover:text-accent transition">
-              <FaLinkedin />
-            </a>
-            <a href="#" className="hover:text-accent transition">
-              <FaGithub />
-            </a>
-          </div>
+         <div className="flex items-center gap-6 text-lg">
+  {socialLinks.map(({ id, icon: Icon, url, label }) => (
+    <a
+      key={id}
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={label}
+       onMouseEnter={() => setVariant("hoverButton")}
+          onMouseLeave={() => setVariant("default")}
+      className="hover:text-accent transition"
+    >
+      <Icon />
+    </a>
+  ))}
+</div>
         </div>
       </div>
         </motion.div>

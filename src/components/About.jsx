@@ -5,7 +5,6 @@ import { useRef } from "react";
 import HeroImage from './HeroImage';
 import { MdWavingHand } from "react-icons/md";
 import AboutSocials from './AboutSocials';
-import HoverText from './HoverText';
 
 const About = () => {
     const ref = useRef(null);
@@ -29,14 +28,13 @@ const About = () => {
         <div className="grid gap-5">
             <h2 className="font-bold uppercase text-2xl lg:text-4xl xl:text-6xl">About me</h2>
             <p className="text-[16px] lg:text-[17px] xl:text-[18px] text-black-2 font-medium">
-              <HoverText>
+              
                 I didn’t start with the goal of becoming a developer — I started with curiosity about how digital products actually work. That curiosity slowly turned into building, experimenting, and improving. <br />
 Today, I’m a MERN stack developer and Software Engineering student at UET Taxila (CGPA 3.96). I focus on building responsive, structured, and practical web applications that are easy to use and easy to maintain. <br />
-              </HoverText>
             </p>
             <AboutSocials/>
           
-          <PrimaryButton as='a' href='#' text='Contact Me' className='w-fit' />
+          <PrimaryButton as='a' href='#contact' text='Contact Me' className='w-fit' />
         </div>
         {/* img container */}
                 <motion.div

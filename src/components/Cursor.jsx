@@ -22,14 +22,6 @@ const Cursor = () => {
       borderRadius: '100%',
       boxShadow: 'none',
     },
-    hoverText: {
-    scale: 3, // bigger for text reveal
-    backgroundColor: '#000',
-    borderRadius: '50%',
-    boxShadow: '0 0 20px rgba(79, 124, 255,0.3)',
-
-    // this is important: mask effect will follow cursor
-  },
   hoverButton: {
     scale: 3, // bigger for text reveal
     backgroundColor: 'transparent',
@@ -66,14 +58,10 @@ const Cursor = () => {
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, [mouseX, mouseY]);
 
-const cursorClass =
-    cursorVariant === 'hoverText'
-      ? 'mix-blend-difference'
-      : '';
   return (
     <>
       <motion.div
-        className={`fixed top-0 left-0 pointer-events-none   mix    z-9999999 w-6 h-6 ${cursorClass}`}
+        className={`fixed top-0 left-0 pointer-events-none cursor-none   z-9999999 w-6 h-6 `}
         style={{ translateX: cursorX, translateY: cursorY }}
         animate={cursorVariant}
         variants={variants}

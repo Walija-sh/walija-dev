@@ -2,9 +2,11 @@ import React, { useState } from 'react'
 import { motion } from "motion/react";
 import {  FaGithub, FaLinkedin, FaInstagram, FaTwitter } from 'react-icons/fa';
 import RollingText from './RollingText';
+import { useCursorContext } from './CursorContext';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+   
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -45,6 +47,7 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           {/* left */}
                    <RollingText
+                
   text='Walija.dev'
   className=" text-[16px] lg:text-[20px] leading-none font-bold hover:text-accent transition-all duration-100 ease-in uppercase"
 />
@@ -88,8 +91,8 @@ const Navbar = () => {
         className=""
       >
         <div className="max-w-7xl mx-auto px-6 py-12 flex flex-col  gap-6 lg:flex-row lg:justify-between lg:items-end">
-          <nav className="flex flex-col gap-y-6 text-4xl lg:text-5xl font-bold tracking-tight">
-            {["HOME", "ABOUT ME", "PROJECTS", "PLAYGROUND", "CONTACT"].map(
+          <nav className="flex flex-col gap-y-6 text-4xl lg:text-5xl font-bold tracking-tight uppercase">
+            {["HOME", "ABOUT ME", "Experience", "Projects", "CONTACT"].map(
               (item, i) => (
                 <motion.a
                   key={i}

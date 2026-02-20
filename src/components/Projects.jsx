@@ -4,6 +4,7 @@ import { motion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
 import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
+import { useCursorContext } from "./CursorContext";
 const projects = [
   {
     title: "YouTube Clone",
@@ -44,6 +45,7 @@ const projects = [
 ];
 
 const Projects = () => {
+    const { setVariant } = useCursorContext();
   const containerRef = useRef(null);
 
   const { scrollYProgress } = useScroll({
@@ -142,6 +144,8 @@ const Projects = () => {
                         href={project.links.repo}
                         target="_blank"
                         rel="noreferrer"
+                         onMouseEnter={ ()=>setVariant('hoverButton')}
+                   onMouseLeave={ ()=>setVariant('default')}
                         className="w-10 h-10 flex items-center justify-center rounded-full border border-white/20 hover:bg-white hover:text-black transition"
                       >
                         <FaGithub size={16} />
@@ -153,6 +157,8 @@ const Projects = () => {
                         href={project.links.live}
                         target="_blank"
                         rel="noreferrer"
+                         onMouseEnter={ ()=>setVariant('hoverButton')}
+                   onMouseLeave={ ()=>setVariant('default')}
                         className="w-10 h-10 flex items-center justify-center rounded-full bg-accent text-white hover:scale-110 transition"
                       >
                         <FiExternalLink size={16} />

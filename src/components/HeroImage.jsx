@@ -25,7 +25,7 @@ const HeroImage = ({ className = "" }) => {
   return (
     <motion.div
       ref={containerRef}
-      className={`relative overflow-hidden ${className}`}
+      className={`relative overflow-hidden cursor-none ${className}`}
       style={{ "--x": "50%", "--y": "50%" }}
       onMouseEnter={() => setVariant('hoverImage')}
       onMouseLeave={() => setVariant('default')}
