@@ -10,6 +10,7 @@ import { CursorContextProvider } from './components/CursorContext'
 import Cursor from './components/Cursor'
 import Navbar from './components/Navbar'
 import PageLoader from './components/PageLoader'
+import { AnimatePresence } from 'motion/react'
 
 
 const App = () => {
@@ -27,23 +28,25 @@ const App = () => {
   }, []);
   return (
   <>
-  {loading ? (
-    <PageLoader loading={loading} />
-  ) : (
-    <main className="bg-black-2 text-white min-h-screen">
-      <CursorContextProvider>
-        <Cursor />
-        <Navbar />
-        <Hero />
-        <About />
-        <Skills />
-        <Experience />
-        <Projects />
-        <Contact />
-        <Footer />
-      </CursorContextProvider>
-    </main>
-  )}
+ <>
+<AnimatePresence mode="wait">
+    {loading && <PageLoader key="loader" />}
+  </AnimatePresence>
+
+  <main className="bg-black-2 text-white min-h-screen">
+    <CursorContextProvider>
+      <Cursor />
+      <Navbar />
+      <Hero />
+      <About />
+      <Skills />
+      <Experience />
+      <Projects />
+      <Contact />
+      <Footer />
+    </CursorContextProvider>
+  </main>
+</>
 </>
 
 
