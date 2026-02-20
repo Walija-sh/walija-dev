@@ -1,6 +1,6 @@
 import React from 'react'
 import PrimaryButton from './PrimaryButton'
-import { motion, useScroll, useSpring, useTransform } from "motion/react";
+import { motion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
 import HeroImage from './HeroImage';
 import { MdWavingHand } from 'react-icons/md';
@@ -15,18 +15,16 @@ const { scrollYProgress } = useScroll({
   target: ref,
   offset: ["start start", "end start"],
 });
-const rawsize = useTransform(scrollYProgress, [0, 0.25], [250, 50]);
-const rawradius = useTransform(scrollYProgress, [0, 0.25], [16, 999]);
 
-const size = useSpring(rawsize, { stiffness: 120, damping: 20 });
-const radius = useSpring(rawradius, { stiffness: 120, damping: 20 });
 
 
 
 
   return (
-    <section ref={ref}
+    <motion.section ref={ref}
     id='home'
+   
+
     className='sticky top-[-50%] lg:top-[-20%] z-7 bg-black-2 min-h-screen  '>
       <MeshGradientBg/>
       <div className="max-w-7xl mx-auto  px-5 py-10 pt-40 lg:px-8 lg:py-16 xl:py-25 grid gap-5  ">
@@ -129,7 +127,7 @@ const radius = useSpring(rawradius, { stiffness: 120, damping: 20 });
            </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   )
 }
 

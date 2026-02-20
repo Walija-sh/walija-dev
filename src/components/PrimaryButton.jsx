@@ -9,6 +9,7 @@ const PrimaryButton = ({
   text = "View Resume",
   className = "",
   target = "_self",
+  type = "button",
   rel,
   ...props
 }) => {
@@ -26,7 +27,8 @@ const PrimaryButton = ({
     <Component
       href={as === "a" ? href : undefined}
       onClick={as === "button" ? onClick : undefined}
-      target={target}
+      type={as === "button" ?  type : undefined}
+      target={as === "a" ?  target : undefined}
       rel={rel}
       className={`
         relative inline-block overflow-hidden rounded-lg

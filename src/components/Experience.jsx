@@ -65,7 +65,7 @@ useEffect(() => {
           <h2 className="text-xs font-bold tracking-[0.3em] uppercase text-accent mb-4">
             Professional Journey
           </h2>
-          <h3 className="text-[10vw] font-bold tracking-tighter uppercase text-white leading-none text-center">
+          <h3 className="text-[10vw] font-bold tracking-tighter uppercase  leading-none text-center  text-white">
             My Experience
           </h3>
         </motion.div>

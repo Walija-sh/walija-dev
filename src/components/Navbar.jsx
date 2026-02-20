@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 import { motion } from "motion/react";
-import {  FaGithub, FaLinkedin, FaInstagram, FaTwitter } from 'react-icons/fa';
 import RollingText from './RollingText';
 import { useCursorContext } from './CursorContext';
+import { socialLinks } from './data';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const {setVariant} =useCursorContext();
    
 
   const toggleMenu = () => {
@@ -126,18 +127,21 @@ const Navbar = () => {
             
             {/* Social Icons - Matching footer style */}
             <div className="flex items-center gap-6 text-lg mt-6">
-              <a href="#" className="text-white/50 hover:text-accent transition">
-                <FaInstagram />
-              </a>
-              <a href="#" className="text-white/50 hover:text-accent transition">
-                <FaTwitter />
-              </a>
-              <a href="#" className="text-white/50 hover:text-accent transition">
-                <FaLinkedin />
-              </a>
-              <a href="#" className="text-white/50 hover:text-accent transition">
-                <FaGithub />
-              </a>
+             
+               {socialLinks.map(({ id, icon: Icon, url, label }) => (
+                  <a
+                    key={id}
+                    href={url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={label}
+                     onMouseEnter={() => setVariant("hoverButton")}
+                        onMouseLeave={() => setVariant("default")}
+                    className="text-white/50 hover:text-accent transition"
+                  >
+                    <Icon />
+                  </a>
+                ))}
             </div>
           </div>
         </div>
