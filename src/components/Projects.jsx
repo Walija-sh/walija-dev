@@ -8,43 +8,134 @@ import { useCursorContext } from "./CursorContext";
 import SubHeaderMarquee from "./SubHeaderMarquee";
 const projects = [
   {
-    title: "YouTube Clone",
-    type: "MERN / React System",
-    description: "Built to understand real-time data handling and scalable frontend structure.",
-    focus: ["Data flow", "UI structure", "Performance"],
-    tech: ["React", "Node.js", "MongoDB", "Tailwind"],
-    links: { repo: "#", live: "#" },
-    image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=1000&auto=format&fit=crop"
+  title: "Techzo",
+  type: "E-commerce Product Platform",
+  description: "Responsive e-commerce website simulating a real-world shopping experience with dynamic product interaction, cart management, and API-based product data.",
+  focus: [
+    "Responsive Design",
+    "Cart Management",
+    "API Integration",
+    "DOM Manipulation",
+    "LocalStorage Persistence"
+  ],
+  tech: [
+    "HTML5",
+    "CSS3",
+    "JavaScript",
+    "DummyJSON API",
+    "LocalStorage"
+  ],
+  links: {
+    repo: "https://github.com/Walija-sh/Techzo-Ecommerce-Platform",
+    live: "https://techzo-ecommerce-platform.vercel.app/"
   },
-  {
-    title: "Katakomben",
-    type: "Event Website",
-    description: "Interactive event platform built with motion and animation-focused UI.",
-    focus: ["UX", "Motion", "Responsive UI"],
-    tech: ["Framer Motion", "Next.js", "GSAP"],
-    links: { repo: "#", live: "#" },
-    image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=1000&auto=format&fit=crop"
+  image: "/images/projects/techzo.png"
+},
+{
+  title: "MyDay",
+  type: "Visual Daily Planner",
+  "description": "A friendly, visual daily planner designed for autistic youth to build routines, reduce anxiety, and celebrate daily tasks with a gentle, clutter-free interface.",
+  focus: [
+    "Visual Routine Builder",
+    "User Authentication",
+    "Progress Tracking",
+    "Minimalist UI"
+  ],
+  tech: [
+    "React",
+    "Firebase (Auth & Firestore)",
+    "Redux",
+    "Tailwind CSS"
+  ],
+  links: {
+    repo: "https://github.com/Walija-sh/My-Day",
+    live: "https://my-day-beige.vercel.app"
   },
-  {
-    title: "Securist",
-    type: "Security Landing Page",
-    description: "Clean, trust-focused landing page designed for clarity and structure.",
-    focus: ["Layout", "UI clarity", "Performance"],
-    tech: ["React", "Tailwind", "TypeScript"],
-    links: { repo: "#", live: "#" },
-    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1000&auto=format&fit=crop"
+  image: "/images/projects/myday.png"
+},
+{
+  title: "Invoila",
+  type: "Invoice & Payment Tracker",
+  description: "A streamlined invoice management dashboard for freelancers and small business owners to create, track, and manage invoices with visual payment insights.",
+  focus: [
+    "Invoice Management",
+    "Payment Tracking",
+    "Data Visualization",
+    "PDF Export"
+  ],
+  tech: [
+    "React",
+    "React Router",
+    "React Context API",
+    "Recharts",
+    "html2pdf.js",
+    "Tailwind CSS",
+    "Vite"
+  ],
+  links: {
+    repo: "https://github.com/Walija-sh/Invoila",
+    live: "https://invoila.vercel.app"
   },
-  {
-    title: "Renoventra",
-    type: "Multi-Service Website",
-    description: "Structured website supporting multiple service domains.",
-    focus: ["Navigation", "Structure", "Usability"],
-    tech: ["React", "Tailwind CSS", "Framer"],
-    links: { repo: "#", live: "#" },
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop"
-  }
-];
+  image: "/images/projects/invoila2.png"
+},
+{
+  title: "Forever",
+  type: "E-Commerce Platform (MERN)",
+  description: "A full-stack e-commerce platform with separate customer-facing store and admin dashboard for product and order management.",
+  focus: [
+    "Product Catalog",
+    "Admin Dashboard",
+    "Inventory Management",
+    "Filter & Sort System"
+  ],
+  tech: [
+    "React",
+    "Node.js",
+    "Express",
+    "MongoDB Atlas",
+    "Tailwind CSS",
+    "JWT Authentication",
+    "REST API"
+  ],
+  links: {
+    repo: "https://github.com/Walija-sh/Forever-Ecommerce-Mern",
+    live: "https://forever-frontend-lime-rho.vercel.app"
 
+    // {
+    //   frontend: "https://forever-frontend-lime-rho.vercel.app",
+    //   admin: "https://forever-admin-omega-red.vercel.app"
+    // }
+  },
+  image: "/images/projects/forever.png"
+},{
+  title: "CozyChecklist",
+  type: "Task Management MERN Application",
+  description: "A calm and friendly task management web app with priority-based sorting and user authentication, featuring a cozy UI for managing daily tasks without pressure.",
+  focus: [
+    "Task Management",
+    "Priority Filtering",
+    "User Authentication",
+    "Optimistic UI Updates"
+  ],
+  tech: [
+    "React",
+    "Node.js",
+    "Express",
+    "MongoDB Atlas",
+    "JWT Authentication",
+    "Tailwind CSS",
+    "React Router",
+    "Axios"
+  ],
+  links: {
+    repo: "https://github.com/Walija-sh/COZYCHECKLIST_TODO_MERN",
+    live: "https://cozychecklist-todo-mern.vercel.app"
+  },
+  image: "/images/projects/cozyChecklist.png",
+},
+
+];
+// add yt clone and rejouice
 const Projects = () => {
     const { setVariant } = useCursorContext();
   const containerRef = useRef(null);
