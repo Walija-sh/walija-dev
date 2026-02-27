@@ -5,6 +5,7 @@ import { useRef } from "react";
 import HeroImage from './HeroImage';
 import { MdWavingHand } from "react-icons/md";
 import AboutSocials from './AboutSocials';
+import SubHeaderMarquee from './SubHeaderMarquee';
 
 const About = () => {
     const ref = useRef(null);
@@ -26,7 +27,10 @@ const About = () => {
 
         {/* content */}
         <div className="grid gap-5">
+          <div className="">
+            <SubHeaderMarquee text="ALWAYS LEARNING • ALWAYS BUILDING" className="!max-w-[200px]"/>
             <h2 className="font-bold uppercase text-2xl lg:text-4xl xl:text-6xl">About me</h2>
+          </div>
             <p className="text-[16px] lg:text-[17px] xl:text-[18px] text-black-2 font-medium">
               
                 I didn’t start with the goal of becoming a developer — I started with curiosity about how digital products actually work. That curiosity slowly turned into building, experimenting, and improving. <br />

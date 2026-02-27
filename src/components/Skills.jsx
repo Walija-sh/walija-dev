@@ -3,6 +3,7 @@ import { motion, useScroll, useTransform } from "motion/react";
 import PrimaryButton from './PrimaryButton';
 import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJsSquare, FaGitAlt, FaGithub, FaFigma } from "react-icons/fa";
 import { SiTailwindcss, SiBootstrap, SiVercel, SiFramer, SiMongodb, SiExpress, SiDotnet } from "react-icons/si";
+import SubHeaderMarquee from './SubHeaderMarquee';
 
 const skills = [
   { name: "React", icon: <FaReact />, color: "#61DAFB" },
@@ -77,7 +78,11 @@ const Skills = () => {
 
         {/* Left Side: Content */}
         <div className="grid gap-6 lg:text-center items-center justify-center">
+          <div className="">
+
+          <SubHeaderMarquee text="TOOLS THAT POWER MY WORK" className="!max-w-[150px] lg:mx-auto" />
           <h2 className="font-bold uppercase text-3xl lg:text-5xl xl:text-7xl">My Skills</h2>
+          </div>
           <p className="text-[16px] lg:text-[18px] text-gray-400 leading-relaxed max-w-xl">
             I specialize in the MERN stack and modern software architecture.
             My technical toolkit is focused on building scalable, high-performance

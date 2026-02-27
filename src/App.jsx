@@ -17,15 +17,19 @@ const App = () => {
   // first handle all the layout, text animations at end, loader,custom cursor, gradients
    const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const handleLoad = () => {
-      setLoading(false);
-    };
+useEffect(() => {
+  const handleLoad = () => {
+    setTimeout(() => setLoading(false), 500);
+  };
 
+  if (document.readyState === "complete") {
+    handleLoad();
+  } else {
     window.addEventListener("load", handleLoad);
-
-    return () => window.removeEventListener("load", handleLoad);
-  }, []);
+    return () =>
+      window.removeEventListener("load", handleLoad);
+  }
+}, []);
   return (
   <>
  <>

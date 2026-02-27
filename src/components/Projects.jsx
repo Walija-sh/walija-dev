@@ -5,6 +5,7 @@ import { useRef } from "react";
 import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 import { useCursorContext } from "./CursorContext";
+import SubHeaderMarquee from "./SubHeaderMarquee";
 const projects = [
   {
     title: "YouTube Clone",
@@ -69,9 +70,8 @@ const Projects = () => {
           style={{ y: titleY, opacity: titleOpacity }}
           className="hidden lg:flex flex-col items-center justify-center absolute inset-0 pointer-events-none"
         >
-          <h2 className="text-xs font-bold tracking-[0.3em] uppercase text-accent/70 mb-4">
-            Selected Works
-          </h2>
+         
+           <SubHeaderMarquee text="Selected Works"/>
           <h3 className="text-[10vw] font-bold tracking-tighter uppercase text-white/5 leading-none">
             Projects
           </h3>
@@ -79,9 +79,8 @@ const Projects = () => {
 
         {/* Header */}
         <div className="relative z-20 mb-24 lg:mb-32">
-          <h2 className="text-xs font-bold tracking-[0.25em] uppercase text-accent mb-2">
-            Portfolio
-          </h2>
+          
+          <SubHeaderMarquee text="Portfolio" className="!max-w-[200px]"/>
           <h3 className="text-4xl lg:text-6xl font-bold tracking-tight">
             Selected Works
           </h3>

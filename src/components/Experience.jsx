@@ -1,6 +1,7 @@
 
 import { motion, useScroll, useSpring, useTransform } from "motion/react"; 
 import { useEffect, useRef, useState } from "react";
+import SubHeaderMarquee from "./SubHeaderMarquee";
 const experiences = [
   {
     title: "Freelance Web Developer",
@@ -62,9 +63,8 @@ useEffect(() => {
           
           className="hidden lg:flex flex-col items-center justify-center absolute top-[50%] translate-y-[-50%] pointer-events-none left-0 w-full text-center "
         >
-          <h2 className="text-xs font-bold tracking-[0.3em] uppercase text-accent mb-4">
-            Professional Journey
-          </h2>
+          
+          <SubHeaderMarquee text="Professional Journey" className="!max-w-[250px]"/>
           <h3 className="text-[10vw] font-bold tracking-tighter uppercase  leading-none text-center  text-white">
             My Experience
           </h3>
@@ -72,7 +72,7 @@ useEffect(() => {
 
         {/* Mobile Header (Standard) */}
         <div className="lg:hidden mb-12">
-           <h2 className="text-xs font-bold tracking-[0.2em] uppercase text-accent mb-2">Professional Journey</h2>
+           <SubHeaderMarquee text="Professional Journey" className="!max-w-[200px]"/>
            <h3 className="text-4xl font-bold uppercase">My Experience</h3>
         </div>
 
