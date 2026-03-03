@@ -84,15 +84,13 @@ const Skills = () => {
           <h2 className="font-bold uppercase text-3xl lg:text-5xl xl:text-7xl">My Skills</h2>
           </div>
           <p className="text-[16px] lg:text-[18px] text-gray-400 leading-relaxed max-w-xl">
-            I specialize in the MERN stack and modern software architecture.
-            My technical toolkit is focused on building scalable, high-performance
-            applications with a strong emphasis on clean code and user experience.
-          </p>
+  I mainly work with the MERN stack and enjoy using tools and frameworks that help me build web sites that are fast, scalable, and easy to maintain. I care about writing clean code and making sure the apps I build are actually enjoyable for people to use.
+</p>
           <PrimaryButton as='a' href='#contact' text='Contact Me' className='w-fit mx-auto' />
         </div>
 
         {/* Right Side: Circular Orbit */}
-        <div className="relative flex items-center justify-center max-w-[400px] min-h-[400px]  aspect-square my-20 mx-auto lg:my-30">
+        <div className="relative flex items-center justify-center max-w-[400px] min-h-[250px] sm:min-h-[400px]  aspect-square my-40  mx-auto ">
           {/* Inner Active Skill Display */}
           <motion.div
             key={activeSkill.name}

@@ -10,31 +10,25 @@ export const socialLinks = [
   {
     id: "github",
     icon: FaGithub,
-    url: "https://github.com/yourusername",
+    url: "https://github.com/Walija-sh",
     label: "GitHub",
   },
   {
     id: "linkedin",
     icon: FaLinkedin,
-    url: "https://linkedin.com/in/yourusername",
+    url: "https://www.linkedin.com/in/syeda-walija-hassan-150ab5255/",
     label: "LinkedIn",
-  },
-  {
-    id: "twitter",
-    icon: FaTwitter,
-    url: "https://twitter.com/yourusername",
-    label: "Twitter",
   },
   {
     id: "instagram",
     icon: FaInstagram,
-    url: "https://instagram.com/yourusername",
+    url: "https://www.instagram.com/walija._.hassan/",
     label: "Instagram",
   },
   {
     id: "email",
     icon: FaEnvelope,
-    url: "mailto:youremail@example.com",
+    url: "mailto:walijash@gmail.com",
     label: "Email",
   },
 ];

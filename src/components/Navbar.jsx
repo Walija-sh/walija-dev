@@ -119,10 +119,10 @@ const Navbar = () => {
           <div className="mt-16 pt-8 lg:mt-0 lg:pt-0">
             <p className="text-white/50 text-sm mb-4">Get in touch</p>
             <a 
-              href="mailto:contact@zayla.com" 
+              href="mailto:walijash@gmail.com" 
               className="text-white/80 hover:text-accent transition text-lg inline-block"
             >
-              contact@zayla.com
+              walijash@gmail.com
             </a>
             
             {/* Social Icons - Matching footer style */}

@@ -72,12 +72,11 @@ const y = useSpring(yRaw, {
             </div>
 
             <p className="text-white/60 text-sm max-w-sm leading-relaxed">
-              Building thoughtful interfaces and motion-driven digital
-              experiences with focus on clarity, structure, and interaction.
-            </p>
+  I love building web experiences that are easy to use and enjoyable. I focus on clean structure, smooth interactions, and small details that make a difference.
+</p>
 
             <PrimaryButton
-              href="mailto:your@email.com"
+              href="mailto:walijash@gmail.com"
             text="Email Me"
             />
           </div>

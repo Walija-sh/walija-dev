@@ -33,8 +33,9 @@ const About = () => {
           </div>
             <p className="text-[16px] lg:text-[17px] xl:text-[18px] text-black-2 font-medium">
               
-                I didn’t start with the goal of becoming a developer — I started with curiosity about how digital products actually work. That curiosity slowly turned into building, experimenting, and improving. <br />
-Today, I’m a MERN stack developer and Software Engineering student at UET Taxila (CGPA 3.96). I focus on building responsive, structured, and practical web applications that are easy to use and easy to maintain. <br />
+                  My journey into tech started not with a plan to become a developer, but with curiosity, I wanted to understand how digital products actually work. That curiosity quickly turned into building, experimenting, and improving. <br />
+  Today, I’m a MERN stack developer and Software Engineering student at UET Taxila. I’m currently exploring TypeScript and Next.js, and I love collaborating on frontend projects that solve real problems. <br />
+  Beyond coding, I’m someone who enjoys a bit of everything: playing chess, cooking, drawing, and learning languages like Korean and Chinese. I’m always curious, always learning, and always looking for ways to challenge myself.
             </p>
             <AboutSocials/>
           

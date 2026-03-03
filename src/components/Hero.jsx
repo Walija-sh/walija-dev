@@ -107,10 +107,9 @@ const { scrollYProgress } = useScroll({
   </h1>
             </div>
            <div className='text-center grid gap-4 justify-items-center lg:max-w-[500px] lg:-mt-5 relative'> 
-               <p className="text-[16px] text-gray-1 lg:text-white lg:text-xl font-medium capitalize">
-                 I design and develop clean, responsive, and scalable web applications using the MERN stack — focused on real usability, performance, and maintainable code.
-               </p>
-             
+              <p className="text-[16px] text-gray-1 lg:text-white lg:text-xl font-medium capitalize">
+  I love building web apps that just work and are clean, responsive, and easy to use. I care about making sites simple to use, fast, and something I’d actually enjoy using myself.
+</p>
           
 
             
