@@ -74,7 +74,7 @@ const projects = [
   ],
   links: {
     repo: "https://github.com/Walija-sh/Invoila",
-    live: "https://invoila.vercel.app"
+    live: "https://invoila-frontend.vercel.app/"
   },
   image: "/images/projects/invoila2.png"
 },
