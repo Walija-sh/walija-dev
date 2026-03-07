@@ -55,21 +55,22 @@ const projects = [
 },
 {
   title: "Invoila",
-  type: "Invoice & Payment Tracker",
-  description: "A streamlined invoice management dashboard for freelancers and small business owners to create, track, and manage invoices with visual payment insights.",
+  type: "Client & Invoice Management System",
+  description: "A comprehensive MERN stack application for managing clients and invoices. Invoila allows users to organize client information, track invoice statuses (paid, unpaid, overdue), and manage payment methods. The system provides a clean dashboard for viewing all invoices with filtering capabilities, detailed client management with contact information, and customizable account settings including currency preferences and security options.",
   focus: [
-    "Invoice Management",
-    "Payment Tracking",
-    "Data Visualization",
-    "PDF Export"
+    "Client Information Management",
+    "Invoice Tracking & Status Filtering",
+    "Payment Method Configuration",
+    "Account & Security Settings"
   ],
   tech: [
     "React",
     "React Router",
     "React Context API",
-    "Recharts",
-    "html2pdf.js",
     "Tailwind CSS",
+    "Node.js",
+    "Express",
+    "MongoDB & Mongoose",
     "Vite"
   ],
   links: {
