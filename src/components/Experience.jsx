@@ -8,9 +8,9 @@ const experiences = [
     duration: "2023 — Present",
     company: "Independent",
     description: [
-      "I began freelancing to apply theory to real-world problems — building practical web solutions for clients across different domains.",
-      "Event and platform websites",
-      "Landing and business sites",
+      "Built responsive websites and landing pages for events and businesses.",
+      "Focused on clean UI, performance, and modern frontend practices.",
+      "Continuously expanding into full-stack development."
     ],
   },
   {
@@ -18,10 +18,10 @@ const experiences = [
     duration: "Jul 2025 — Sep 2025",
     company: "OutSecure",
     description: [
-      "Worked in a structured development environment contributing to frontend systems.",
-      "Built responsive React components",
-      "Worked in team workflow",
-      "Delivered features under deadlines",
+      "Completed multiple individual projects using JavaScript, React, Firebase, and the MERN stack.",
+      "Built a JavaScript eCommerce interface and a React invoice management system.",
+      "Developed a Firebase-powered visual day planner for autistic users.",
+      "Attended technical sessions and applied modern development workflows."
     ],
   },
 ];

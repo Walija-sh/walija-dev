@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { motion } from "motion/react";
 import RollingText from './RollingText';
 import { useCursorContext } from './CursorContext';
@@ -7,6 +7,14 @@ import { socialLinks } from './data';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const {setVariant} =useCursorContext();
+  const [isMobile, setIsMobile] = useState(false);
+
+useEffect(() => {
+  const check = () => setIsMobile(window.innerWidth < 768);
+  check();
+  window.addEventListener("resize", check);
+  return () => window.removeEventListener("resize", check);
+}, []);
    
 
   const toggleMenu = () => {
@@ -14,20 +22,20 @@ const Navbar = () => {
   };
 
   // Menu icon animation variants
-  const topBarVariants = {
-    open: { rotate: 45, y: 8 },
-    closed: { rotate: 0, y: 0 }
-  };
 
   const middleBarVariants = {
     open: { opacity: 0, x: -10 },
     closed: { opacity: 1, x: 0 }
   };
+const topBarVariants = {
+  open: { rotate: 45, y: isMobile ? 6 : 8 },
+  closed: { rotate: 0, y: 0 }
+};
 
-  const bottomBarVariants = {
-    open: { rotate: -45, y: -12 },
-    closed: { rotate: 0, y: 0 }
-  };
+const bottomBarVariants = {
+  open: { rotate: -45, y: isMobile ? -10 : -12 },
+  closed: { rotate: 0, y: 0 }
+};
 
   return (
     <>
@@ -63,19 +71,19 @@ const Navbar = () => {
               variants={topBarVariants}
               animate={isOpen ? "open" : "closed"}
               transition={{ duration: 0.3, ease: "easeInOut" }}
-              className=" w-12 h-1 bg-white/80 group-hover:bg-accent transition-colors"
+              className=" w-8 md:w-12 h-0.5 md:h-1 bg-white/80 group-hover:bg-accent transition-colors"
             />
             <motion.div
               variants={middleBarVariants}
               animate={isOpen ? "open" : "closed"}
               transition={{ duration: 0.3, ease: "easeInOut" }}
-              className="w-12 h-1 bg-white/80 group-hover:bg-accent transition-colors"
+              className="w-8 md:w-12 h-0.5 md:h-1 bg-white/80 group-hover:bg-accent transition-colors"
             />
             <motion.div
               variants={bottomBarVariants}
               animate={isOpen ? "open" : "closed"}
               transition={{ duration: 0.3, ease: "easeInOut" }}
-              className=" w-12 h-1 bg-white/80 group-hover:bg-accent transition-colors"
+              className=" w-8 md:w-12 h-0.5 md:h-1 bg-white/80 group-hover:bg-accent transition-colors"
             />
           </button>
         </div>
