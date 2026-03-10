@@ -2,30 +2,7 @@
 import { motion, useScroll, useSpring, useTransform } from "motion/react"; 
 import { useEffect, useRef, useState } from "react";
 import SubHeaderMarquee from "./SubHeaderMarquee";
-const experiences = [
-  {
-    title: "Freelance Web Developer",
-    duration: "2023 — Present",
-    company: "Independent",
-    description: [
-      "Built responsive websites and landing pages for events and businesses.",
-      "Focused on clean UI, performance, and modern frontend practices.",
-      "Continuously expanding into full-stack development."
-    ],
-  },
-  {
-    title: "Web Development Intern",
-    duration: "Jul 2025 — Sep 2025",
-    company: "OutSecure",
-    description: [
-      "Completed multiple individual projects using JavaScript, React, Firebase, and the MERN stack.",
-      "Built a JavaScript eCommerce interface and a React invoice management system.",
-      "Developed a Firebase-powered visual day planner for autistic users.",
-      "Attended technical sessions and applied modern development workflows."
-    ],
-  },
-];
-
+import {experiences} from './data.js'
 const Experience = () => {
   const [isLargeScreen,setIsLargeScreen]=useState(window.innerWidth > 1024)
 const containerRef = useRef(null);
