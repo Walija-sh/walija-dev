@@ -54,6 +54,55 @@ const projects = [
   image: "/images/projects/myday.png"
 },
 {
+  title: "YouTube Clone",
+  type: "React Video Streaming Platform",
+  description: "A responsive YouTube-inspired video platform that allows users to browse trending videos, search content, explore channels, and view detailed video information using real-time data from the YouTube Data API.",
+  focus: [
+    "Video Discovery & Search",
+    "Dynamic Routing",
+    "API Data Fetching",
+    "Skeleton Loading UI",
+    "State Management with Context API"
+  ],
+  tech: [
+    "React",
+    "React Router",
+    "Context API",
+    "YouTube Data API v3",
+    "CSS"
+  ],
+  links: {
+    repo: "https://github.com/Walija-sh/Youtube-Clone",
+    live: "https://youtube-clone-nine-ivory.vercel.app/"
+  },
+  image: "/images/projects/youtube.png"
+},
+{
+  title: "Sizzling Spoon",
+  type: "Restaurant Website with Interactive UI",
+  description: "A visually appealing restaurant website built with React and Tailwind CSS, featuring a dynamic menu, cart functionality, search and filter options, smooth GSAP animations, and an intuitive user interface for an engaging food ordering experience.",
+  focus: [
+    "Menu Search & Filter",
+    "Cart Management",
+    "GSAP Animations",
+    "Responsive Design",
+    "State Management with Redux"
+  ],
+  tech: [
+    "React",
+    "Tailwind CSS",
+    "Redux Toolkit",
+    "React Router",
+    "GSAP",
+    "Swiper.js"
+  ],
+  links: {
+    repo: "https://github.com/Walija-sh/Sizzling-Spoon",
+    live: "https://sizzling-spoon.vercel.app/"
+  },
+  image: "/images/projects/sizzling-spoon.png"
+},
+{
   title: "Invoila",
   type: "Client & Invoice Management System",
   description: "A comprehensive MERN stack application for managing clients and invoices. Invoila allows users to organize client information, track invoice statuses (paid, unpaid, overdue), and manage payment methods. The system provides a clean dashboard for viewing all invoices with filtering capabilities, detailed client management with contact information, and customizable account settings including currency preferences and security options.",
