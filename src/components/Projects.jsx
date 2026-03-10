@@ -7,101 +7,7 @@ import { FiExternalLink } from "react-icons/fi";
 import { useCursorContext } from "./CursorContext";
 import SubHeaderMarquee from "./SubHeaderMarquee";
 const projects = [
-  {
-  title: "Techzo",
-  type: "E-commerce Product Platform",
-  description: "Responsive e-commerce website simulating a real-world shopping experience with dynamic product interaction, cart management, and API-based product data.",
-  focus: [
-    "Responsive Design",
-    "Cart Management",
-    "API Integration",
-    "DOM Manipulation",
-    "LocalStorage Persistence"
-  ],
-  tech: [
-    "HTML5",
-    "CSS3",
-    "JavaScript",
-    "DummyJSON API",
-    "LocalStorage"
-  ],
-  links: {
-    repo: "https://github.com/Walija-sh/Techzo-Ecommerce-Platform",
-    live: "https://techzo-ecommerce-platform.vercel.app/"
-  },
-  image: "/images/projects/techzo.png"
-},
-{
-  title: "MyDay",
-  type: "Visual Daily Planner",
-  "description": "A friendly, visual daily planner designed for autistic youth to build routines, reduce anxiety, and celebrate daily tasks with a gentle, clutter-free interface.",
-  focus: [
-    "Visual Routine Builder",
-    "User Authentication",
-    "Progress Tracking",
-    "Minimalist UI"
-  ],
-  tech: [
-    "React",
-    "Firebase (Auth & Firestore)",
-    "Redux",
-    "Tailwind CSS"
-  ],
-  links: {
-    repo: "https://github.com/Walija-sh/My-Day",
-    live: "https://my-day-beige.vercel.app"
-  },
-  image: "/images/projects/myday.png"
-},
-{
-  title: "YouTube Clone",
-  type: "React Video Streaming Platform",
-  description: "A responsive YouTube-inspired video platform that allows users to browse trending videos, search content, explore channels, and view detailed video information using real-time data from the YouTube Data API.",
-  focus: [
-    "Video Discovery & Search",
-    "Dynamic Routing",
-    "API Data Fetching",
-    "Skeleton Loading UI",
-    "State Management with Context API"
-  ],
-  tech: [
-    "React",
-    "React Router",
-    "Context API",
-    "YouTube Data API v3",
-    "CSS"
-  ],
-  links: {
-    repo: "https://github.com/Walija-sh/Youtube-Clone",
-    live: "https://youtube-clone-nine-ivory.vercel.app/"
-  },
-  image: "/images/projects/youtube.png"
-},
-{
-  title: "Sizzling Spoon",
-  type: "Restaurant Website with Interactive UI",
-  description: "A visually appealing restaurant website built with React and Tailwind CSS, featuring a dynamic menu, cart functionality, search and filter options, smooth GSAP animations, and an intuitive user interface for an engaging food ordering experience.",
-  focus: [
-    "Menu Search & Filter",
-    "Cart Management",
-    "GSAP Animations",
-    "Responsive Design",
-    "State Management with Redux"
-  ],
-  tech: [
-    "React",
-    "Tailwind CSS",
-    "Redux Toolkit",
-    "React Router",
-    "GSAP",
-    "Swiper.js"
-  ],
-  links: {
-    repo: "https://github.com/Walija-sh/Sizzling-Spoon",
-    live: "https://sizzling-spoon.vercel.app/"
-  },
-  image: "/images/projects/sizzling-spoon.png"
-},
+ 
 {
   title: "Invoila",
   type: "Client & Invoice Management System",
@@ -182,6 +88,102 @@ const projects = [
     live: "https://cozychecklist-todo-mern.vercel.app"
   },
   image: "/images/projects/cozyChecklist.png",
+},
+{
+  title: "MyDay",
+  type: "Visual Daily Planner",
+  "description": "A friendly, visual daily planner designed for autistic youth to build routines, reduce anxiety, and celebrate daily tasks with a gentle, clutter-free interface.",
+  focus: [
+    "Visual Routine Builder",
+    "User Authentication",
+    "Progress Tracking",
+    "Minimalist UI"
+  ],
+  tech: [
+    "React",
+    "Firebase (Auth & Firestore)",
+    "Redux",
+    "Tailwind CSS"
+  ],
+  links: {
+    repo: "https://github.com/Walija-sh/My-Day",
+    live: "https://my-day-beige.vercel.app"
+  },
+  image: "/images/projects/myday.png"
+},
+{
+  title: "YouTube Clone",
+  type: "React Video Streaming Platform",
+  description: "A responsive YouTube-inspired video platform that allows users to browse trending videos, search content, explore channels, and view detailed video information using real-time data from the YouTube Data API.",
+  focus: [
+    "Video Discovery & Search",
+    "Dynamic Routing",
+    "API Data Fetching",
+    "Skeleton Loading UI",
+    "State Management with Context API"
+  ],
+  tech: [
+    "React",
+    "React Router",
+    "Context API",
+    "YouTube Data API v3",
+    "CSS"
+  ],
+  links: {
+    repo: "https://github.com/Walija-sh/Youtube-Clone",
+    live: "https://youtube-clone-nine-ivory.vercel.app/"
+  },
+  image: "/images/projects/youtube.png"
+},
+ {
+  title: "Techzo",
+  type: "E-commerce Product Platform",
+  description: "Responsive e-commerce website simulating a real-world shopping experience with dynamic product interaction, cart management, and API-based product data.",
+  focus: [
+    "Responsive Design",
+    "Cart Management",
+    "API Integration",
+    "DOM Manipulation",
+    "LocalStorage Persistence"
+  ],
+  tech: [
+    "HTML5",
+    "CSS3",
+    "JavaScript",
+    "DummyJSON API",
+    "LocalStorage"
+  ],
+  links: {
+    repo: "https://github.com/Walija-sh/Techzo-Ecommerce-Platform",
+    live: "https://techzo-ecommerce-platform.vercel.app/"
+  },
+  image: "/images/projects/techzo.png"
+},
+
+{
+  title: "Sizzling Spoon",
+  type: "Restaurant Website with Interactive UI",
+  description: "A visually appealing restaurant website built with React and Tailwind CSS, featuring a dynamic menu, cart functionality, search and filter options, smooth GSAP animations, and an intuitive user interface for an engaging food ordering experience.",
+  focus: [
+    "Menu Search & Filter",
+    "Cart Management",
+    "GSAP Animations",
+    "Responsive Design",
+    "State Management with Redux"
+  ],
+  tech: [
+    "React",
+    "Tailwind CSS",
+    "Redux Toolkit",
+    "React Router",
+    "GSAP",
+    "Swiper.js"
+  ],
+  links: {
+    repo: "https://github.com/Walija-sh/Sizzling-Spoon",
+    live: "https://sizzling-spoon.vercel.app/"
+  },
+  image: "/images/projects/sizzling-spoon.png"
 },
 
 ];
