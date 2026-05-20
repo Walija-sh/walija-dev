@@ -116,7 +116,7 @@ const { scrollYProgress } = useScroll({
           
             <PrimaryButton
   as="a"
-  href="https://drive.google.com/file/d/10RMPcWMN5JjyteflG4yUpSKkptzemB7w/view"
+  href="https://drive.google.com/file/d/1sYKnzg7U5quyZrWh6_kqYmGgJwJvFylB/view?usp=sharing"
   target="_blank"
   rel="noopener noreferrer"
   text="View Resume"
