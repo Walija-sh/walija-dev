@@ -34,7 +34,39 @@ export const socialLinks = [
 ];
 
 export const projects = [
- 
+ {
+  title: "SkillLabz",
+  type: "Peer-to-Peer Tool Rental & Skill-Sharing Platform",
+  description: "A community-driven MERN stack platform that enables users to rent tools, equipment, and resources from nearby people while also offering optional skill-sharing sessions. SkillLabz focuses on affordability, trust, and accessibility through OTP-based verification, digital rental agreements, transparent reviews, in-app communication, and localized payment flexibility. The platform empowers students, freelancers, and households to monetize idle assets, learn practical skills, and access expensive equipment without ownership costs.",
+  focus: [
+    "Final Year Project",
+    "Peer-to-Peer Tool & Equipment Rentals",
+    "OTP-Based Verification & Digital Contracts",
+    "Real-Time Chat & Communication",
+    "Skill-Sharing & Teaching Sessions",
+    "Hyperlocal Discovery & Community Trust",
+    "Rental Status Tracking & Reviews",
+    "Flexible Local Payment Methods"
+  ],
+  tech: [
+    "React",
+    "Redux Toolkit",
+    "React Router",
+    "Tailwind CSS",
+    "Node.js",
+    "Express.js",
+    "MongoDB & Mongoose",
+    "Firebase",
+    "JWT Authentication",
+    "Cloudinary",
+    "Vite"
+  ],
+  links: {
+    repo: "https://github.com/Walija-sh/SkillLabz",
+    live: "https://www.skilllabz.tech/"
+  },
+  image: "/images/projects/skillLabz.png"
+},
 {
   title: "Invoila",
   type: "Client & Invoice Management System",
